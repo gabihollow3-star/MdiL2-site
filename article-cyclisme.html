@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour de France : la montagne s'annonce décisive — GNL Sportif Mada</title>
+  <style>
+    :root {
+      --rouge: #e63946; --rouge-fonce: #c1121f; --noir: #1a1a2e;
+      --gris-fonce: #16213e; --gris: #0f3460; --blanc: #f1faee;
+      --jaune: #ffd60a; --vert: #2dc653; --texte-clair: #a8dadc;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Georgia, 'Times New Roman', serif; background-color: var(--noir); color: var(--blanc); }
+    nav { background-color: var(--gris-fonce); border-bottom: 3px solid var(--rouge); padding: 0 40px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+    nav .logo { font-size: 24px; font-weight: bold; color: var(--rouge); padding: 15px 0; text-decoration: none; font-family: Arial, sans-serif; }
+    nav .logo span { color: var(--jaune); }
+    nav a.retour { text-decoration: none; background-color: var(--rouge); color: var(--blanc); padding: 9px 20px; font-size: 13px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; font-family: Arial, sans-serif; transition: background-color 0.3s; }
+    nav a.retour:hover { background-color: var(--rouge-fonce); }
+    .hero-article { background: linear-gradient(to bottom, rgba(26,26,46,0.4), var(--noir)), url('images/cyclisme.jpg') center/cover no-repeat; padding: 120px 40px 80px; text-align: center; border-bottom: 4px solid var(--rouge); }
+    .hero-article .categorie { display: inline-block; background-color: var(--jaune); color: var(--noir); font-family: Arial, sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; padding: 5px 14px; margin-bottom: 20px; font-weight: bold; }
+    .hero-article h1 { font-size: 46px; line-height: 1.2; color: var(--blanc); max-width: 800px; margin: 0 auto 20px; text-shadow: 0 2px 10px rgba(0,0,0,0.8); }
+    .hero-article .meta { font-family: Arial, sans-serif; font-size: 13px; color: var(--texte-clair); letter-spacing: 1px; }
+    .hero-article .meta span { color: var(--jaune); }
+    .article-body { max-width: 820px; margin: 60px auto; padding: 0 30px; }
+    .article-body p { font-size: 17px; line-height: 1.9; color: var(--blanc); margin-bottom: 25px; opacity: 0.92; }
+    .article-body h2 { font-size: 26px; color: var(--rouge); margin: 40px 0 15px; font-family: Arial, sans-serif; text-transform: uppercase; letter-spacing: 2px; border-left: 4px solid var(--rouge); padding-left: 15px; }
+    .article-body blockquote { border-left: 4px solid var(--jaune); padding: 15px 25px; margin: 30px 0; background-color: var(--gris-fonce); color: var(--jaune); font-size: 19px; font-style: italic; line-height: 1.6; }
+    .classement-box { background-color: var(--gris-fonce); border: 1px solid rgba(255,255,255,0.1); margin: 30px 0; overflow: hidden; }
+    .classement-box .titre { background-color: var(--rouge); padding: 12px 20px; font-family: Arial, sans-serif; font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: var(--blanc); font-weight: bold; }
+    .classement-box table { width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; }
+    .classement-box td { padding: 14px 20px; font-size: 15px; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .classement-box tr:last-child td { border-bottom: none; }
+    .classement-box .pos { color: var(--jaune); font-weight: bold; width: 40px; }
+    .classement-box .gap { color: var(--texte-clair); font-size: 13px; }
+    .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin: 30px 0; }
+    .stat-item { background-color: var(--gris-fonce); padding: 20px; text-align: center; border-top: 3px solid var(--jaune); }
+    .stat-item strong { display: block; font-size: 28px; color: var(--jaune); font-family: Arial, sans-serif; }
+    .stat-item span { font-size: 12px; color: var(--texte-clair); text-transform: uppercase; letter-spacing: 1px; font-family: Arial, sans-serif; }
+    footer { background-color: var(--gris-fonce); border-top: 3px solid var(--rouge); padding: 30px 40px; text-align: center; font-family: Arial, sans-serif; }
+    footer p { color: var(--texte-clair); font-size: 13px; }
+    footer a { color: var(--rouge); text-decoration: none; }
+    @media (max-width: 768px) { .hero-article h1 { font-size: 28px; } .hero-article { padding: 80px 20px 50px; } .article-body { padding: 0 15px; } .stat-grid { grid-template-columns: 1fr; } nav { padding: 0 20px; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="sport.html" class="logo">GNL<span>Sportif Mada</span></a>
+    <a href="sport.html#actualites" class="retour">Retour aux actualités</a>
+  </nav>
+
+  <div class="hero-article">
+    <span class="categorie"> Cyclisme</span>
+    <h1>Tour de France 2026 : la montagne s'annonce décisive</h1>
+    <p class="meta">Par <span>Rédaction GNL Sportif Mada</span> &nbsp;|&nbsp; 19 mars 2026 &nbsp;|&nbsp; 8 min de lecture</p>
+  </div>
+
+  <div class="article-body">
+
+    <p>À mi-parcours du Tour de France 2026, le suspense est total. Cinq coureurs se tiennent en moins de 45 secondes au classement général, à l'aube des étapes alpines qui s'annoncent comme le véritable juge de paix de cette Grande Boucle. Jamais depuis 2013 le Tour n'avait présenté un classement aussi serré à ce stade de la compétition.</p>
+
+    <div class="classement-box">
+      <div class="titre">Classement général après l'étape 12</div>
+      <table>
+        <tr><td class="pos">1.</td><td><strong>Jonas Eriksen (DEN)</strong></td><td class="gap">leader</td></tr>
+        <tr><td class="pos">2.</td><td>Carlos Alvarado (COL)</td><td class="gap">+ 8''</td></tr>
+        <tr><td class="pos">3.</td><td>Maxime Renard (FRA)</td><td class="gap">+ 17''</td></tr>
+        <tr><td class="pos">4.</td><td>Tadej Kowalski (POL)</td><td class="gap">+ 31''</td></tr>
+        <tr><td class="pos">5.</td><td>Hugo Ferreira (POR)</td><td class="gap">+ 44''</td></tr>
+      </table>
+    </div>
+
+    <h2>Un Tour haletant depuis le départ</h2>
+
+    <p>Cette édition du Tour de France a commencé avec un Grand Départ spectaculaire à Bordeaux. Les premières étapes de plaine ont été marquées par des arrivées au sprint enlevées, remportées pour la plupart par le sprinter britannique Jack Morrison qui a endossé le maillot vert. Mais c'est dans le Massif Central, lors des étapes 8, 9 et 10, que la course a véritablement commencé à se dessiner.</p>
+
+    <p>Le Danois Jonas Eriksen, pensionnaire de l'équipe Ineos Grenadiers, a frappé le premier lors de l'étape du Puy de Dôme en s'imposant avec 12 secondes d'avance sur ses rivaux directs. Une attaque sèche à 5 kilomètres du sommet qui a sonné les premières alertes dans le peloton. L'homme fort de cette première partie de Tour est clairement identifié.</p>
+
+    <blockquote>"Il reste encore la moitié de la course. Je suis leader mais rien n'est fait. Les Alpes vont tout décider." — Jonas Eriksen, maillot jaune</blockquote>
+
+    <h2>Les étapes alpines, le jugement dernier</h2>
+
+    <p>Le parcours des étapes 13 à 17 est tout simplement vertigineux. Les organisateurs du Tour ont concocté un menu de haute montagne qui fera la différence entre les prétendants sérieux et les seconds couteaux. Au programme : le Col du Galibier, l'Alpe d'Huez, la Croix de Fer, et pour finir, un contre-la-montre en altitude au sommet du Col de la Loze.</p>
+
+    <p>Carlos Alvarado, le grimpeur colombien qui pointe à la deuxième place, est considéré par beaucoup comme le favori naturel de ces étapes de montagne. Sa légèreté — il pèse seulement 58 kilos pour 1m72 — et sa puissance en altitude font de lui un danger permanent pour Eriksen. Les deux hommes ont déjà croisé le fer à deux reprises cette semaine, et chaque duel a été d'une intensité rare.</p>
+
+    <div class="stat-grid">
+      <div class="stat-item"><strong>5</strong><span>Coureurs en 45 secondes</span></div>
+      <div class="stat-item"><strong>5</strong><span>Étapes alpines restantes</span></div>
+      <div class="stat-item"><strong>3450m</strong><span>Altitude max — Col de la Loze</span></div>
+    </div>
+
+    <h2>Maxime Renard, l'espoir français</h2>
+
+    <p>La France retient son souffle pour Maxime Renard, 26 ans, coureur de l'équipe AG2R La Mondiale. Troisième au classement général à seulement 17 secondes du maillot jaune, il représente l'espoir le plus sérieux d'un succès français sur le Tour depuis Bernard Hinault en 1985. Grimpeur solide et excellent contre-la-montriste, Renard possède le profil idéal pour le deuxième tiers de cette Grande Boucle.</p>
+
+    <p>Son directeur sportif, Jean-Pierre Vasseur, reste prudent mais optimiste. L'équipe française a travaillé avec une minutie remarquable pour préparer ces étapes alpines, repérant chaque col, chronométrant chaque segment. Si Renard passe les Alpes dans les roues des deux premiers, sa performance en contre-la-montre final pourrait lui offrir la victoire finale.</p>
+
+    <blockquote>"Je ne regarde pas le classement. Je gère mon effort étape par étape. Mais dans les Alpes, je vais attaquer." — Maxime Renard, 3e au général</blockquote>
+
+    <h2>Paris, le 6 juillet au bout de la route</h2>
+
+    <p>Quelle que soit l'issue de cette bataille alpine, ce Tour de France 2026 s'annonce déjà comme l'un des plus passionnants de la dernière décennie. L'arrivée sur les Champs-Élysées, prévue le 6 juillet, promet une conclusion digne de ce feuilleton palpitant. Les millions de spectateurs au bord des routes et les téléspectateurs du monde entier ont de quoi se régaler dans les jours qui viennent.</p>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 <a href="index.html">GNL Sportif Mada</a> — Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>

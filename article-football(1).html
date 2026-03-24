@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAN 2025 : le Maroc titré après la disqualification du Sénégal — GNL Sportif Mada</title>
+  <style>
+    :root {
+      --rouge: #e63946;
+      --rouge-fonce: #c1121f;
+      --noir: #1a1a2e;
+      --gris-fonce: #16213e;
+      --gris: #0f3460;
+      --blanc: #f1faee;
+      --jaune: #ffd60a;
+      --vert: #2dc653;
+      --texte-clair: #a8dadc;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Georgia, 'Times New Roman', serif; background-color: var(--noir); color: var(--blanc); }
+
+    nav {
+      background-color: var(--gris-fonce);
+      border-bottom: 3px solid var(--rouge);
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav .logo { font-size: 24px; font-weight: bold; color: var(--rouge); padding: 15px 0; text-decoration: none; font-family: Arial, sans-serif; }
+    nav .logo span { color: var(--jaune); }
+    nav a.retour {
+      text-decoration: none;
+      background-color: var(--rouge);
+      color: var(--blanc);
+      padding: 9px 20px;
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s;
+    }
+    nav a.retour:hover { background-color: var(--rouge-fonce); }
+
+    .hero-article {
+      background: linear-gradient(to bottom, rgba(26,26,46,0.2), var(--noir)),
+                  url('images/can2025.jpg') center/cover no-repeat;
+      padding: 120px 40px 80px;
+      text-align: center;
+      border-bottom: 4px solid var(--rouge);
+    }
+    .hero-article .categorie {
+      display: inline-block;
+      background-color: var(--rouge);
+      color: var(--blanc);
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 5px 14px;
+      margin-bottom: 20px;
+    }
+    .hero-article h1 {
+      font-size: 48px;
+      line-height: 1.2;
+      color: var(--blanc);
+      max-width: 800px;
+      margin: 0 auto 20px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+    }
+    .hero-article .meta {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: var(--texte-clair);
+      letter-spacing: 1px;
+    }
+    .hero-article .meta span { color: var(--jaune); }
+
+    .article-body {
+      max-width: 820px;
+      margin: 60px auto;
+      padding: 0 30px;
+    }
+    .article-body p {
+      font-size: 17px;
+      line-height: 1.9;
+      color: var(--blanc);
+      margin-bottom: 25px;
+      opacity: 0.92;
+    }
+    .article-body h2 {
+      font-size: 26px;
+      color: var(--rouge);
+      margin: 40px 0 15px;
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-left: 4px solid var(--rouge);
+      padding-left: 15px;
+    }
+    .article-body blockquote {
+      border-left: 4px solid var(--jaune);
+      padding: 15px 25px;
+      margin: 30px 0;
+      background-color: var(--gris-fonce);
+      color: var(--jaune);
+      font-size: 19px;
+      font-style: italic;
+      line-height: 1.6;
+    }
+    .score-box {
+      background-color: var(--gris-fonce);
+      border: 2px solid var(--rouge);
+      padding: 30px;
+      text-align: center;
+      margin: 35px 0;
+    }
+    .score-box .teams {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      font-family: Arial, sans-serif;
+    }
+    .score-box .team-name { font-size: 22px; font-weight: bold; color: var(--blanc); }
+    .score-box .score { font-size: 52px; font-weight: bold; color: var(--jaune); }
+    .score-box .label { font-size: 11px; color: var(--texte-clair); text-transform: uppercase; letter-spacing: 2px; margin-top: 10px; font-family: Arial, sans-serif; }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin: 30px 0;
+    }
+    .stat-item {
+      background-color: var(--gris-fonce);
+      padding: 20px;
+      text-align: center;
+      border-top: 3px solid var(--rouge);
+    }
+    .stat-item strong { display: block; font-size: 30px; color: var(--jaune); font-family: Arial, sans-serif; }
+    .stat-item span { font-size: 12px; color: var(--texte-clair); text-transform: uppercase; letter-spacing: 1px; font-family: Arial, sans-serif; }
+
+    footer {
+      background-color: var(--gris-fonce);
+      border-top: 3px solid var(--rouge);
+      padding: 30px 40px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    footer p { color: var(--texte-clair); font-size: 13px; }
+    footer a { color: var(--rouge); text-decoration: none; }
+
+    @media (max-width: 768px) {
+      .hero-article h1 { font-size: 30px; }
+      .hero-article { padding: 80px 20px 50px; }
+      .article-body { padding: 0 15px; }
+      .stat-grid { grid-template-columns: 1fr; }
+      nav { padding: 0 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="sport.html" class="logo">GNL<span>Sportif Mada</span></a>
+    <a href="sport.html#actualites" class="retour"> Retour aux actualités</a>
+  </nav>
+
+  <div class="hero-article">
+    <span class="categorie"> Football</span>
+    <h1>CAN 2025 : le Maroc titré après la disqualification du Sénégal</h1>
+    <p class="meta">Par <span>Rédaction GNL Sportif Mada</span> &nbsp;|&nbsp; 23 mars 2026 &nbsp;|&nbsp; 8 min de lecture</p>
+  </div>
+
+  <div class="article-body">
+
+    <p>La Coupe d’Afrique des Nations 2025 restera dans les annales, mais pas comme le Sénégal l’avait imaginé. Après avoir remporté la finale contre le Maroc, les Lions de la Teranga ont été <strong>disqualifiés début 2026</strong> par la Confédération africaine de football (CAF), qui a officiellement attribué le titre au Maroc.</p>
+
+    <div class="score-box">
+      <div class="teams">
+        <span class="team-name">Sénégal</span>
+        <span class="score">1 — 0</span>
+        <span class="team-name">Maroc</span>
+      </div>
+      <p class="label">Résultat initial — Finale CAN 2025</p>
+    </div>
+
+    <h2>La disqualification surprise</h2>
+
+    <p>La CAF a expliqué que l’équipe sénégalaise avait quitté le terrain prématurément pour protester contre une décision arbitrale. Cette action constitue un <strong>forfait disciplinaire</strong> selon les articles 82 et 84 du règlement de la compétition, entraînant la perte automatique de la rencontre.</p>
+
+    <div class="score-box">
+      <div class="teams">
+        <span class="team-name">Sénégal</span>
+        <span class="score">0 — 3</span>
+        <span class="team-name">Maroc</span>
+      </div>
+      <p class="label">Décision officielle de la CAF</p>
+    </div>
+
+    <blockquote>"Nous contestons fermement cette décision et allons faire appel devant le Tribunal arbitral du sport. Nous estimons que la sanction est disproportionnée et que notre équipe méritait son titre." — Fédération Sénégalaise de Football</blockquote>
+
+    <h2>Réactions et conséquences</h2>
+
+    <p>Cette décision a bouleversé le monde du football africain. Le Maroc, qui perdait initialement la finale, est désormais officiellement <strong>champion d’Afrique 2025</strong>. Le Sénégal, lui, devra défendre son honneur lors du recours devant le Tribunal arbitral du sport.</p>
+
+    <p>Les supporters sénégalais ont exprimé leur colère et leur désarroi, tandis que les fans marocains célèbrent un titre historique. Cette controverse renforce la rivalité sportive entre les deux nations et laisse présager des confrontations à haute tension lors des prochaines compétitions.</p>
+
+    <h2>Statistiques marquantes de la finale</h2>
+    <div class="stat-grid">
+      <div class="stat-item">
+        <strong>80 000</strong>
+        <span>Spectateurs présents</span>
+      </div>
+      <div class="stat-item">
+        <strong>90'</strong>
+        <span>Minutes de jeu</span>
+      </div>
+      <div class="stat-item">
+        <strong>2</strong>
+        <span>Buts marqués initialement</span>
+      </div>
+    </div>
+
+    <h2>Le Maroc, champion officiel</h2>
+
+    <p>Avec cette décision, le Maroc entre dans l’histoire comme champion de la CAN 2025. Les Lions de l’Atlas célèbrent un titre inattendu mais légitime selon le règlement de la CAF, tandis que le Sénégal prépare son recours pour tenter de récupérer la reconnaissance de sa victoire sportive.</p>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 <a href="index.html">GNL Sportif Mada</a> — Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>
